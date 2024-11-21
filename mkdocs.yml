@@ -1,10 +1,10 @@
 site_name: Andal Docs
 site_url: https://rlaksana.github.io/andal-docs/
-
 theme:
   name: material
 
+# Auto-generate navigation
 nav:
-  - Home: index.md
-  
+  - ... | auto
+
 docs_dir: docs
