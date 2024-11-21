@@ -1,0 +1,4 @@
+site_name: Andal Notes
+theme:
+  name: material
+docs_dir: docs
