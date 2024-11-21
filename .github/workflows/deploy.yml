@@ -25,9 +25,8 @@ jobs:
         run: mkdocs build
 
       - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Use PAT here
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          mkdocs gh-deploy --force --remote-branch gh-pages --remote-name origin
+        uses: actions/deploy-pages@v2
+        with:
+          # No need to specify GITHUB_TOKEN, it's handled automatically
+          branch: gh-pages  # The branch the action should deploy to
+          folder: site     # The folder where the built site is located
