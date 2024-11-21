@@ -33,7 +33,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material
+          pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 
       - name: Clean site directory
         run: rm -rf site
@@ -42,7 +42,9 @@ jobs:
         run: mkdocs build
 
       - name: List site contents 
-        run: ls -l site
+        run: |
+          ls -la site
+          find site -type f
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
