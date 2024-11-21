@@ -7,27 +7,25 @@ plugins:
   - search
   - awesome-pages
 
-# Navigation structure akan mengikuti struktur folder
 nav:
   - Home: index.md
-  - PenTest:
-    - Futaba:
+  - Futaba:
       - Sheet 1:
-        - Finding 8: PenTest/Futaba/Sheet 1/Finding 8.md
-        - Finding 9: PenTest/Futaba/Sheet 1/Finding 9.md
-        - Finding 10: PenTest/Futaba/Sheet 1/Finding 10.md
-        - Finding 11: PenTest/Futaba/Sheet 1/Finding 11.md
-        - Finding 12: PenTest/Futaba/Sheet 1/Finding 12.md
-        - Finding 13: PenTest/Futaba/Sheet 1/Finding 13.md
-        - Finding 14: PenTest/Futaba/Sheet 1/Finding 14.md
-        - Finding 15: PenTest/Futaba/Sheet 1/Finding 15.md
-        - Finding 16: PenTest/Futaba/Sheet 1/Finding 16.md
-        - Finding 17-22: PenTest/Futaba/Sheet 1/Finding 17, 18, 19, 20, 21, 22.md
-        - Finding 86: PenTest/Futaba/Sheet 1/Finding 86.md
-        - Finding 87: PenTest/Futaba/Sheet 1/Finding 87.md
+        - Finding 8: Futaba/Sheet 1/Finding 8.md
+        - Finding 9: Futaba/Sheet 1/Finding 9.md
+        - Finding 10: Futaba/Sheet 1/Finding 10.md
+        - Finding 11: Futaba/Sheet 1/Finding 11.md
+        - Finding 12: Futaba/Sheet 1/Finding 12.md
+        - Finding 13: Futaba/Sheet 1/Finding 13.md
+        - Finding 14: Futaba/Sheet 1/Finding 14.md
+        - Finding 15: Futaba/Sheet 1/Finding 15.md
+        - Finding 16: Futaba/Sheet 1/Finding 16.md
+        - "Finding 17-22": "Futaba/Sheet 1/Finding 17, 18, 19, 20, 21, 22.md"
+        - Finding 86: Futaba/Sheet 1/Finding 86.md
+        - Finding 87: Futaba/Sheet 1/Finding 87.md
       - Sheet 2:
-        - Finding 1: PenTest/Futaba/Sheet 2/Finding 1.md
-        - Finding 7: PenTest/Futaba/Sheet 2/Finding 7.md
-        - Finding 8: PenTest/Futaba/Sheet 2/Finding 8.md
+        - Finding 1: Futaba/Sheet 2/Finding 1.md
+        - Finding 7: Futaba/Sheet 2/Finding 7.md
+        - Finding 8: Futaba/Sheet 2/Finding 8.md
 
 docs_dir: docs
