@@ -2,6 +2,30 @@ site_name: Andal Docs
 site_url: https://rlaksana.github.io/andal-docs/
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: indigo
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: indigo
+      accent: lime
 
 plugins:
   - search
@@ -9,23 +33,41 @@ plugins:
 
 nav:
   - Home: index.md
-  - Futaba:
-      - Sheet 1:
-        - Finding 8: Futaba/Sheet 1/Finding 8.md
-        - Finding 9: Futaba/Sheet 1/Finding 9.md
-        - Finding 10: Futaba/Sheet 1/Finding 10.md
-        - Finding 11: Futaba/Sheet 1/Finding 11.md
-        - Finding 12: Futaba/Sheet 1/Finding 12.md
-        - Finding 13: Futaba/Sheet 1/Finding 13.md
-        - Finding 14: Futaba/Sheet 1/Finding 14.md
-        - Finding 15: Futaba/Sheet 1/Finding 15.md
-        - Finding 16: Futaba/Sheet 1/Finding 16.md
-        - "Finding 17-22": "Futaba/Sheet 1/Finding 17, 18, 19, 20, 21, 22.md"
-        - Finding 86: Futaba/Sheet 1/Finding 86.md
-        - Finding 87: Futaba/Sheet 1/Finding 87.md
-      - Sheet 2:
-        - Finding 1: Futaba/Sheet 2/Finding 1.md
-        - Finding 7: Futaba/Sheet 2/Finding 7.md
-        - Finding 8: Futaba/Sheet 2/Finding 8.md
+  - Pentest:
+      - Futaba:
+          - Sheet 1:
+            - Finding 8: PenTest/Futaba/Sheet 1/Finding 8.md
+            - Finding 9: PenTest/Futaba/Sheet 1/Finding 9.md
+            - Finding 10: PenTest/Futaba/Sheet 1/Finding 10.md
+            - Finding 11: PenTest/Futaba/Sheet 1/Finding 11.md
+            - Finding 12: PenTest/Futaba/Sheet 1/Finding 12.md
+            - Finding 13: PenTest/Futaba/Sheet 1/Finding 13.md
+            - Finding 14: PenTest/Futaba/Sheet 1/Finding 14.md
+            - Finding 15: PenTest/Futaba/Sheet 1/Finding 15.md
+            - Finding 16: PenTest/Futaba/Sheet 1/Finding 16.md
+            - "Finding 17-22": "PenTest/Futaba/Sheet 1/Finding 17, 18, 19, 20, 21, 22.md"
+            - Finding 86: PenTest/Futaba/Sheet 1/Finding 86.md
+            - Finding 87: PenTest/Futaba/Sheet 1/Finding 87.md
+          - Sheet 2:
+            - Finding 1: PenTest/Futaba/Sheet 2/Finding 1.md
+            - Finding 7: PenTest/Futaba/Sheet 2/Finding 7.md
+            - Finding 8: PenTest/Futaba/Sheet 2/Finding 8.md
 
-docs_dir: docs
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/rlaksana
