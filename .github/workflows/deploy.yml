@@ -6,6 +6,8 @@ on:
       - main
 
 permissions:
+  contents: write   # Allow writing files to the repository
+  pages: write      # Allow publishing to GitHub Pages
   id-token: write
 
 jobs:
