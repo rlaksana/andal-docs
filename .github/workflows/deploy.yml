@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy MkDocs
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -21,6 +21,8 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material
 
-      - name: Build and deploy
-        run: |
-          mkdocs gh-deploy --force
+      - name: Build documentation
+        run: mkdocs build
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --token ${{ secrets.PAT }}
