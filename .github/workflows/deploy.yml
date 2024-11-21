@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  id-token: write  # Required for actions/deploy-pages@v2
+  id-token: write
 
 jobs:
   deploy:
@@ -24,11 +24,17 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material
 
+      - name: Clean site directory
+        run: rm -rf site
+
       - name: Build documentation
         run: mkdocs build
+
+      - name: List site contents  # Check if files exist
+        run: ls -l site
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
         with:
-          branch: gh-pages  # The branch the action should deploy to
-          folder: site     # The folder where the built site is located
+          branch: gh-pages
+          folder: site
