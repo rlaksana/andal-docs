@@ -1,4 +1,10 @@
-site_name: Andal Notes
+site_name: Andal Docs
+site_url: https://rlaksana.github.io/andal-docs/
+
 theme:
   name: material
+
+nav:
+  - Home: index.md
+  
 docs_dir: docs
